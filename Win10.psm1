@@ -1,10 +1,46 @@
-##########
-# Win 10 / Server 2016 / Server 2019 Initial Setup Script - Tweak library
-# Author: Disassembler <disassembler@dasm.cz>
-# Version: v3.10, 2020-07-15
-# Source: https://github.com/Disassembler0/Win10-Initial-Setup-Script
-##########
+﻿ <#
+    .SYNOPSIS
 
+        This function will generate a list
+        of all past RDP connections made
+        on this PC for all users.
+
+
+    .INFORMATION
+
+        Source: https://github.com/Disassembler0/Win10-Initial-Setup-Script
+        Author: disassembler@dasm.cz
+        Version: v3.10, 2020-07-15
+#>
+
+
+
+Write-Host "
+
+
+    ███╗░░░███╗███████╗████████╗░█████╗░██╗░░░░░██╗░░░░░██╗███╗░░██╗░█████╗░░██████╗  ████████╗███████╗░█████╗░██╗░░██╗
+    ████╗░████║██╔════╝╚══██╔══╝██╔══██╗██║░░░░░██║░░░░░██║████╗░██║██╔══██╗██╔════╝  ╚══██╔══╝██╔════╝██╔══██╗██║░░██║
+    ██╔████╔██║█████╗░░░░░██║░░░███████║██║░░░░░██║░░░░░██║██╔██╗██║██║░░██║╚█████╗░  ░░░██║░░░█████╗░░██║░░╚═╝███████║
+    ██║╚██╔╝██║██╔══╝░░░░░██║░░░██╔══██║██║░░░░░██║░░░░░██║██║╚████║██║░░██║░╚═══██╗  ░░░██║░░░██╔══╝░░██║░░██╗██╔══██║
+    ██║░╚═╝░██║███████╗░░░██║░░░██║░░██║███████╗███████╗██║██║░╚███║╚█████╔╝██████╔╝  ░░░██║░░░███████╗╚█████╔╝██║░░██║
+    ╚═╝░░░░░╚═╝╚══════╝░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚══════╝╚═╝╚═╝░░╚══╝░╚════╝░╚═════╝░  ░░░╚═╝░░░╚══════╝░╚════╝░╚═╝░░╚═╝
+
+
+    Title: User Data Import
+    Author: Andrew Metallinos <andrew@metallinostech.com.au>
+    Creation Date: 25/04/2022
+    Revision Date: 25/04/2022
+    Version: 1.0.0
+
+        Original Source: https://github.com/Disassembler0/Win10-Initial-Setup-Script
+        Author: disassembler@dasm.cz
+        Version: v3.10, 2020-07-15
+
+========================================
+"
+
+
+<#
 ##########
 #region Privacy Tweaks
 ##########
@@ -4101,3 +4137,4 @@ Function Restart {
 
 # Export functions
 Export-ModuleMember -Function *
+#>
